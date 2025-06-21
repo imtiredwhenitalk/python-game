@@ -1,0 +1,77 @@
+# Python Space Shooter
+
+Це простий аркадний шутер, написаний на Python з використанням бібліотеки Pygame.
+
+## Опис гри
+
+Ви керуєте космічним кораблем, який рухається вліво-вправо та стріляє по ворогах.  
+Вороги з'являються у 3 рядки зверху екрана. Кожні 5 секунд 10 випадкових ворогів стріляють у гравця.  
+За кожне попадання у гравця знімається 10 HP.  
+Підбираючи щит (powerup), ви відновлюєте 25 HP (але не більше 100).  
+Мета — набрати якомога більше очок та вижити.
+
+## Управління
+
+- **Стрілки вліво/вправо** або **A/D** — рух корабля
+- **Пробіл** — стріляти
+- **Esc** — вихід з гри
+
+## Встановлення та запуск
+
+1. **Встановіть Python 3.8+**
+2. **Встановіть Pygame:**
+   ```
+   pip install pygame
+   ```
+3. **Скачайте або клонуте репозиторій:**
+   ```
+   git clone https://github.com/imtiredwhenitalk/python-space-shooter.git
+   cd python-space-shooter
+   ```
+4. **Додайте папку `assets` з усіма потрібними зображеннями та музикою:**
+   - `player.png`
+   - `enemy.png`
+   - `boss.png`
+   - `bullet.png`
+   - `shield.png`
+   - `background.png`
+   - `backgroundmusic.mp3`
+
+5. **Запустіть гру:**
+   ```
+   python main.py
+   ```
+
+## Структура проекту
+
+```
+python game/
+│
+├── assets/
+│   ├── player.png
+│   ├── enemy.png
+│   ├── boss.png
+│   ├── bullet.png
+│   ├── shield.png
+│   ├── background.png
+│   └── backgroundmusic.mp3
+│
+├── main.py
+├── config.py
+├── game.py
+├── player.py
+├── enemy.py
+├── boss.py
+├── bullet.py
+└── powerup.py
+```
+
+## Автор
+
+- @imtiredwhenitalk
+- @NoSo4eK9 
+
+---
+
+**Бажаєте змінити гру чи додати нові фічі?**  
+Відкривайте issues або робіть pull request!
